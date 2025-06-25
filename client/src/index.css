@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+                                                            /* BODY */
+
+*{
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+}
+#bod{
+  font-family: "poppins" , sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: block;
+    width: 3px;
+    background-color: #070707;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 100px;
+  }
+
+                                                          /* LANDING PAGE */
+
+  .centered-text {
+    position: absolute;
+    top: 40%;
+    right: 4%;
+  }
+
+  .landpage-para{
+    transform: translate(-50%, -50%);
+    font-size: 3rem; 
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff, #00ffee);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  }
+
+  .animated{
+    color: #ffffff; /* Customize the color as needed */
+  animation: fadeIn 1s ease-in-out;
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  }
+
+
+                                                            /* NAVBAR */
+
+                                                            
+/* .navbar-brand{
+   font-weight: 500;
+   color:#009970;
+   font-size:24px;
+}
+
+.nav-link{
+  color: #666777;
+  font-weight: 500;
+  position: relative;
+}
+.nav-link:hover,.nav-link.active{
+  color: black;
+  
+}
+.nav-link::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left :50%;
+  transform: translate(-50%);
+  width: 0;
+  height:2px;
+  background-color: #009970;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before{
+  width: 100%;
+  visibility: visible;
+} */
+
+
+.navbar-container {
+  position: relative;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #555;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #007bff;
+}
+
+.login-button {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-button:hover {
+  text-decoration: underline;
+}
+
+/* Blur effect for scrolling */
+/* .navbar.fixed-top {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+} */
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.offcanvas-title {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  .offcanvas {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar .container-fluid {
+    justify-content: flex-start;
+  }
+
+  .navbar-brand {
+    margin-right: auto;
+  }
+
+  .login-button {
+    display: none;
+  }
+}
+
+/* Scrolling effect */
+body.scrolled .navbar.fixed-top {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.active{
+  color: rgb(54, 196, 196) !important;
+}
+  
+.nav-link {
+  color: #333; /* Default link color */
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #555; /* Link color on hover */
+}
+
+.nav-link.active {
+  font-weight: bold; /* Active link font weight */
+}
+  
+
+
