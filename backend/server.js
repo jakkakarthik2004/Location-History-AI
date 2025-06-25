@@ -7,7 +7,7 @@ const path=require('path')
 const cors = require('cors')
 app.use(cors())
 
-mc.connect('mongdb+srv://srimanikantaBattu:XeoXcx5n7a0r9Qtu@srimanikanta-cluster.pvapart.mongodb.net/writespot?retryWrites=true&w=majority&appName=srimanikanta-cluster')
+mc.connect('mongodb+srv://srimanikantaBattu:XeoXcx5n7a0r9Qtu@srimanikanta-cluster.pvapart.mongodb.net/writespot?retryWrites=true&w=majority&appName=srimanikanta-cluster')
 .then(client=>{
     const dbObj=client.db('geochronicle')
     const usersCollectionObj=dbObj.collection('usersCollection')
